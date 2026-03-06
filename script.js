@@ -98,6 +98,25 @@ if (yearSpan) {
   goTo(0);
 })();
 
+// Expandable Table of Contents
+document.querySelectorAll(".toc-toggle").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    const targetId = btn.getAttribute("aria-controls");
+    const body = document.getElementById(targetId);
+    if (!body) return;
+
+    btn.setAttribute("aria-expanded", String(!expanded));
+    if (expanded) {
+      body.hidden = true;
+    } else {
+      body.hidden = false;
+    }
+  });
+});
+
 
 // curiosity got you here. nice.
+
+
 
