@@ -9,6 +9,8 @@
   <link rel="icon" type="image/png" href="https://i.ibb.co/s9g6chXV/github-1051377.png">
 
   <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- App assets -->
@@ -24,7 +26,7 @@
 
       <!-- Brand -->
       <a href="#hero" class="brand">
-        <div class="brand-mark">EE</div>
+        <img src="logo.webp" alt="EE Collective logo" class="brand-logo-img" />
         <div class="brand-title">EE Collective</div>
       </a>
 
@@ -38,7 +40,6 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="#books">Books</a></li>
           <li><a href="#how-it-helps">Why this project</a></li>
-          <li><a href="#downloads">Downloads</a></li>
           <li><a href="#authors">Authors</a></li>
         </ul>
       </nav>
@@ -188,14 +189,22 @@
 
           <!-- Usage notes -->
           <div class="column" data-animate="fade-in-left">
-            <div class="note-card">
-              <h3>Use it like a toolkit</h3>
-              <ul class="note-list">
-                <li>Pre-read before lectures.</li>
-                <li>Reuse SCI Lab templates.</li>
-                <li>Plug in real measurements.</li>
-                <li>Adapt figures for reports.</li>
-              </ul>
+            <div class="preview-frame note-frame">
+              <div class="preview-header">
+                <div class="dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="preview-title">How to use it</span>
+              </div>
+              <div class="preview-body note-card">
+                <h3>Use it like a toolkit</h3>
+                <ul class="note-list">
+                  <li>Pre-read before lectures.</li>
+                  <li>Reuse SCI Lab templates.</li>
+                  <li>Plug in real measurements.</li>
+                  <li>Adapt figures for reports.</li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -242,11 +251,35 @@
                   <li>Campus system as dataset.</li>
                 </ul>
 
+                <!-- TOC Toggle -->
+                <div class="toc-wrapper">
+                  <button class="toc-toggle" aria-expanded="false" aria-controls="toc-fpp">
+                    <span class="toc-toggle-label">Table of Contents</span>
+                    <span class="toc-chevron">&#9660;</span>
+                  </button>
+                  <div class="toc-body" id="toc-fpp" hidden>
+                    <ol class="toc-list">
+                      <li><strong>Welcome to Electrical Engineering <span class="toc-page">1–2</span></strong></li>
+                      <li><strong>Our Institute, Our Grid <span class="toc-page">3–8</span></strong></li>
+                      <li><strong>Core Concepts of Power Systems <span class="toc-page">9–13</span></strong></li>
+                      <li><strong>Understanding the Grid &amp; Subsystems <span class="toc-page">14–18</span></strong></li>
+                      <li><strong>The Reality of Loads – Variable Power Demand <span class="toc-page">19–24</span></strong></li>
+                      <li><strong>Smart Power – Load Calculations &amp; Key Factors <span class="toc-page">25–29</span></strong></li>
+                      <li><strong>Institute Energy Analytics <span class="toc-page">30–34</span></strong></li>
+                      <li><strong>Electrical Distribution System of the Institute <span class="toc-page">35–37</span></strong></li>
+                      <li><strong>Power Quality and Energy Efficiency in the Institute <span class="toc-page">38–39</span></strong></li>
+                      <li><strong>Renewable Energy and Sustainable Power Solutions <span class="toc-page">40–41</span></strong></li>
+                      <li><strong>The Future of Electrical Power Systems and the Engineer's Role <span class="toc-page">42–43</span></strong></li>
+                      <li><strong>Discover, Build, Innovate <span class="toc-page">44–45</span></strong></li>
+                      <li><strong>Key Formulas <span class="toc-page">46–47</span></strong></li>
+                      <li><strong>Recent Trends in Power Utilization <span class="toc-page">48–49</span></strong></li>
+                      <li><strong>References and Further Reading <span class="toc-page">50–51</span></strong></li>
+                    </ol>
+                  </div>
+                </div>
+
                 <div class="card-actions">
-                  <a href="https://drive.google.com/file/d/1yP7YJvRbtk_UkjPMzk_53zntyQsPNSKb/view?usp=sharing"
-                     class="btn btn-primary"
-                     target="_blank"
-                     rel="noopener">
+                  <a href="https://drive.google.com/file/d/1yP7YJvRbtk_UkjPMzk_53zntyQsPNSKb/view?usp=drive_link" class="btn btn-primary" target="_blank" rel="noopener"> 
                     Read online
                   </a>
                 </div>
@@ -268,7 +301,7 @@
               <div class="book-details-side">
                 <div class="card-label-row">
                   <span class="chip chip-strong chip-outline">Ascentia SCI Lab</span>
-                  <span class="pill pill-soft pill-soon">In development</span>
+                  <span class="pill pill-soft-glow ">Published</span>
                 </div>
 
                 <h3>Turn concepts into code and plots.</h3>
@@ -283,9 +316,86 @@
                   <li>Chapter-aligned examples.</li>
                 </ul>
 
+                <!-- TOC Toggle -->
+                <div class="toc-wrapper">
+                  <button class="toc-toggle" aria-expanded="false" aria-controls="toc-asl">
+                    <span class="toc-toggle-label">Table of Contents</span>
+                    <span class="toc-chevron">&#9660;</span>
+                  </button>
+                  <div class="toc-body" id="toc-asl" hidden>
+                    <ol class="toc-list">
+                      <li><strong>Part I - Foundations of Electrical Simulation</strong>
+                        <ol>
+                          <li>What Is Electrical Simulation <span class="toc-page">1–5</span></li>
+                          <li>Core Electrical Concepts for Simulation <span class="toc-page">6–8</span></li>
+                          <li>Components Used in Electrical &amp; Electronics Simulation <span class="toc-page">9–12</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part II - Introduction to SCI Lab</strong>
+                        <ol>
+                          <li>Installing and Setting Up Scilab <span class="toc-page">13–25</span></li>
+                          <li>Understanding Scilab Interface <span class="toc-page">26–32</span></li>
+                          <li>Building Your First Simple Circuit <span class="toc-page">33–38</span></li>
+                          <li>Assignments and Practice Projects <span class="toc-page">39–41</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part III - Basic Electronics Circuit Simulation</strong>
+                        <ol>
+                          <li>Sources and Basic Components in Simulation <span class="toc-page">42–48</span></li>
+                          <li>Diode and Transistor Circuit Simulation <span class="toc-page">49–54</span></li>
+                          <li>OP-Amp Based Circuits <span class="toc-page">55–59</span></li>
+                          <li>Voltage Regulator Circuits <span class="toc-page">60–68</span></li>
+                          <li>Assignments &amp; Mini Projects <span class="toc-page">69–73</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part IV - Digital Circuit Simulation</strong>
+                        <ol>
+                          <li>Boolean Algebra and Digital Basics <span class="toc-page">74–78</span></li>
+                          <li>Logic Gates in Simulation <span class="toc-page">79–83</span></li>
+                          <li>Flip-Flops and Sequential Circuits <span class="toc-page">84–88</span></li>
+                          <li>Arithmetic Circuits <span class="toc-page">89–96</span></li>
+                          <li>Counters &amp; Shift Registers <span class="toc-page">97–103</span></li>
+                          <li>Assignments and Mini Projects <span class="toc-page">104–108</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part V - Electrical Machines &amp; Power System Simulation</strong>
+                        <ol>
+                          <li>Magnetic Circuit Fundamentals <span class="toc-page">109–115</span></li>
+                          <li>Transformer Simulation <span class="toc-page">116–121</span></li>
+                          <li>DC Motor Simulation <span class="toc-page">122–129</span></li>
+                          <li>Induction Motor Simulation <span class="toc-page">130–139</span></li>
+                          <li>Synchronous Motor Simulation <span class="toc-page">140–149</span></li>
+                          <li>Power System Fault Analysis <span class="toc-page">150–163</span></li>
+                          <li>Assignments &amp; Mini Projects <span class="toc-page">164–166</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part VI - Arduino</strong>
+                        <ol>
+                          <li>Introduction to Arduino and Physical Computing <span class="toc-page">167–172</span></li>
+                          <li>Arduino Hardware Architecture and Board-Level Understanding <span class="toc-page">173–203</span></li>
+                          <li>Installing Arduino IDE and Learning the Development Workflow <span class="toc-page">204–224</span></li>
+                          <li>Arduino Programming and Interfacing Fundamentals <span class="toc-page">225–257</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part VII - Lab Activity</strong>
+                        <ol>
+                          <li>Complete Practical Guide <span class="toc-page">258–277</span></li>
+                        </ol>
+                      </li>
+                      <li><strong>Part VIII - Advanced Topics &amp; Exploration</strong>
+                        <ol>
+                          <li>Advanced Debugging &amp; Numerical Stability in Simulation <span class="toc-page">278–294</span></li>
+                          <li>Modelling Accuracy and Real World Limitations <span class="toc-page">295–304</span></li>
+                          <li>Transitioning to Real Hardware <span class="toc-page">305–333</span></li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+
                 <div class="card-actions">
-                  <a href="#downloads" class="btn btn-primary btn-disabled" aria-disabled="true">
-                    Coming soon
+                  <a href="https://drive.google.com/file/d/1qH4FKKU5yCWySrBiklzZaCsTiHuOFI5l/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">
+                    Read Online
                   </a>
                 </div>
               </div>
@@ -347,23 +457,6 @@ Shreyash Dwivedi and Ratandeep Choudhary,
 open-access digital books, 2025.
 Available at: sdee001.github.io/EE-Collective/
             </code>
-          </div>
-        </div>
 
-      </div>
-    </section>
 
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> EE Collective</span>
-    </div>
-  </footer>
-
-</body>
-</html>
-
-<!-- Keep Learning -->
-
+             <!-- Did you learn Something? -->
