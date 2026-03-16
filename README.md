@@ -7,7 +7,7 @@ A collaborative, open-access learning project containing:
 ---
 
 ##  About the Project
-EE-Collective is a student-driven initiative to create high-quality, openly accessible learning material for Electrical Engineering students — written *by* EE students, *for* EE students.
+EE-Collective is a student-driven initiative to create high-quality, openly accessible learning material for Electrical Engineering students.
 
 This project consists of two complementary books:
 
